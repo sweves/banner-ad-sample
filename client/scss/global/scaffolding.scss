@@ -1,0 +1,14 @@
+$color-red: #f00;
+
+.wrapper {
+    display: flex;
+
+    h1 {
+        @extend %extendTest;
+        font-size: 10em;
+    }
+}
+
+%extendTest {
+  color: $color-red;
+}

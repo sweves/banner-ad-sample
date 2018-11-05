@@ -1,0 +1,45 @@
+{
+  "name": "@sweves/quartz-code-test",
+  "version": "0.0.1",
+  "private": true,
+  "description": "code test for Quartz",
+  "homepage": "https://github.com/sweves/quartz-code-test#readme",
+  "bugs": {
+    "url": "https://github.com/sweves/quartz-code-test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sweves/quartz-code-test.git"
+  },
+  "license": "MIT",
+  "author": "Sarah Wever <sarahewever@gmail.com> (http://sweves.github.io/)",
+  "scripts": {
+    "build": "webpack --config client/config/webpack.config.js",
+    "watch": "webpack --config client/config/webpack.config.js --watch"
+  },
+  "dependencies": {
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.3",
+    "@babel/preset-env": "^7.0.0-rc.3",
+    "autoprefixer": "^9.1.3",
+    "babel-loader": "^8.0.0-beta.6",
+    "css-loader": "^1.0.0",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.18.3",
+    "postcss": "^7.0.2",
+    "postcss-loader": "^3.0.0",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
