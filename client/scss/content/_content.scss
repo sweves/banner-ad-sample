@@ -1,0 +1,10 @@
+.content {
+    display: flex;
+    height: 27.125em;
+    overflow: hidden;
+    width: 100%;
+
+    @include bp-m {
+        height: 32.5em;
+    }
+}

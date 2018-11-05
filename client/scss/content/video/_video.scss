@@ -1,0 +1,16 @@
+.content__video {
+    height: 50%;
+    overflow: hidden;
+    width: 100%;
+
+    @include bp-m {
+        height: 100%;
+        width: 60%;
+    }
+}
+
+video {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

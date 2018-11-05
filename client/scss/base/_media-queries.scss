@@ -1,0 +1,9 @@
+// breakpoints
+$bp-m: 48em;
+
+// queries
+@mixin bp-m {
+  @media (min-width: #{$bp-m}) {
+    @content;
+  }
+}

@@ -1,2 +1,3 @@
-@import "utils/loader.scss";
-@import "global/loader.scss";
+@import 'vendor/loader';
+@import 'base/loader';
+@import 'content/loader';
