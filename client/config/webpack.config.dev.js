@@ -9,13 +9,13 @@ module.exports = {
   mode: "development",
   entry: path.resolve(__dirname, "../../client/js/app/app.js"),
   devServer: {
-    contentBase: "./static",
+    contentBase: "./docs",
     compress: true,
     port: 9000
   },
   output: {
     filename: "main.js",
-    path: path.resolve(__dirname, "../../static"),
+    path: path.resolve(__dirname, "../../docs"),
     publicPath: ""
   },
   plugins: [

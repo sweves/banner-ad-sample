@@ -10,7 +10,7 @@ module.exports = {
   entry: path.resolve(__dirname, "../../client/js/app/app.js"),
   output: {
     filename: "index.bundle.js",
-    path: path.resolve(__dirname, "../../static"),
+    path: path.resolve(__dirname, "../../docs"),
     publicPath: ""
   },
   plugins: [

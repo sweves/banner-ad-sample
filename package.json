@@ -14,10 +14,10 @@
   "license": "MIT",
   "author": "Sarah Wever <sarahewever@gmail.com> (http://sweves.github.io/)",
   "scripts": {
-    "clean": "rimraf static/*",
-    "dev": "rimraf static/* && node_modules/webpack-dev-server/bin/webpack-dev-server.js --config client/config/webpack.config.dev.js",
-    "prod": "rimraf static/* && webpack --config client/config/webpack.config.prod.js",
-    "start": "rimraf static/* && webpack --config client/config/webpack.config.prod.js && nodemon app"
+    "clean": "rimraf docs/*",
+    "dev": "rimraf docs/* && node_modules/webpack-dev-server/bin/webpack-dev-server.js --config client/config/webpack.config.dev.js",
+    "prod": "rimraf docs/* && webpack --config client/config/webpack.config.prod.js",
+    "start": "rimraf docs/* && webpack --config client/config/webpack.config.prod.js && nodemon app"
   },
   "dependencies": {
     "pug": "^2.0.3"
