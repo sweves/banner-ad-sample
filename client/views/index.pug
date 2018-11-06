@@ -7,6 +7,10 @@ html(lang="en")
             name="viewport"
             content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
         )
+        link(
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato:300,300i"
+        )
     body
         main.content
             section.content__video
@@ -23,4 +27,10 @@ html(lang="en")
                     )
             section.content__video-controls
             section.content__slider
-                article.slider__slide
+                section.slider__slides
+                    article.slider__slide
+                section.slider__footer
+                    a.slider__cta(
+                        href="#"
+                    ) buy album
+                    include svg/logo.pug

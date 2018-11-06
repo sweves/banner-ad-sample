@@ -2,3 +2,11 @@
     height: 100%;
     width: 100%;
 }
+
+.slide__logo {
+    width: 3.75em;
+
+    path {
+        fill: $color-yellow;
+    }
+}
