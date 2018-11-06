@@ -7,7 +7,7 @@ const GoogleFontsPlugin = require("google-fonts-plugin");
 
 module.exports = {
   mode: "production",
-  entry: path.resolve(__dirname, "../../src/js/app/app.js"),
+  entry: path.resolve(__dirname, "../../src/js/scripts.js"),
   output: {
     filename: "index.bundle.js",
     path: path.resolve(__dirname, "../../docs"),
