@@ -6,28 +6,23 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const GoogleFontsPlugin = require("google-fonts-plugin");
 
 module.exports = {
-  mode: "development",
-  entry: path.resolve(__dirname, "../../client/js/app/app.js"),
-  devServer: {
-    contentBase: "./docs",
-    compress: true,
-    port: 9000
-  },
+  mode: "production",
+  entry: path.resolve(__dirname, "../../src/js/app/app.js"),
   output: {
-    filename: "main.js",
+    filename: "index.bundle.js",
     path: path.resolve(__dirname, "../../docs"),
     publicPath: ""
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: "main.css"
+      filename: "index.bundle.css"
     }),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: path.resolve(__dirname, "../../client/views/index.pug")
+      template: path.resolve(__dirname, "../../src/views/index.pug")
     }),
     new GoogleFontsPlugin(
-      path.resolve(__dirname, "../../client/js/fonts/fonts.json")
+      path.resolve(__dirname, "../../src/js/fonts/fonts.json")
     )
   ],
   module: {
@@ -59,7 +54,7 @@ module.exports = {
                 config: {
                   path: path.join(
                     __dirname,
-                    "../../client/config/postcss.config.js"
+                    "../../src/config/postcss.config.js"
                   )
                 }
               }
@@ -69,17 +64,6 @@ module.exports = {
             }
           ]
         })
-      },
-      {
-        test: /\.(mp4|webm)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "videos/[name].[ext]"
-            }
-          }
-        ]
       }
     ]
   }

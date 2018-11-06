@@ -1,1 +1,1 @@
-# quartz-code-test
+# Lightweight Interactive Banner Ad Sample

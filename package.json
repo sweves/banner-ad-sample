@@ -1,23 +1,23 @@
 {
-  "name": "@sweves/quartz-code-test",
+  "name": "@sweves/banner-ad-sample",
   "version": "0.0.1",
   "private": true,
-  "description": "code test for Quartz",
-  "homepage": "https://github.com/sweves/quartz-code-test#readme",
+  "description": "lightweight interactive banner ad sample",
+  "homepage": "https://github.com/sweves/banner-ad-sample#readme",
   "bugs": {
-    "url": "https://github.com/sweves/quartz-code-test/issues"
+    "url": "https://github.com/sweves/banner-ad-sample/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sweves/quartz-code-test.git"
+    "url": "git+https://github.com/sweves/banner-ad-sample.git"
   },
   "license": "MIT",
   "author": "Sarah Wever <sarahewever@gmail.com> (http://sweves.github.io/)",
   "scripts": {
     "clean": "rimraf docs/*",
-    "dev": "rimraf docs/* && node_modules/webpack-dev-server/bin/webpack-dev-server.js --config client/config/webpack.config.dev.js",
-    "prod": "rimraf docs/* && webpack --config client/config/webpack.config.prod.js",
-    "start": "rimraf docs/* && webpack --config client/config/webpack.config.prod.js && nodemon app"
+    "dev": "rimraf docs/* && node_modules/webpack-dev-server/bin/webpack-dev-server.js --config src/config/webpack.config.dev.js",
+    "prod": "rimraf docs/* && webpack --config src/config/webpack.config.prod.js",
+    "start": "rimraf docs/* && webpack --config src/config/webpack.config.prod.js && nodemon app"
   },
   "dependencies": {
     "pug": "^2.0.3"
