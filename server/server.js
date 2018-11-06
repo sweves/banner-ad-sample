@@ -1,7 +1,7 @@
 var path = require("path"),
     express = require("express");
 
-var STATIC_DIR = path.join(__dirname, "docs"),
+var STATIC_DIR = path.join(__dirname, "../docs"),
     PORT = 3000,
     app = express();
 

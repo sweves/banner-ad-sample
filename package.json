@@ -17,7 +17,7 @@
     "clean": "rimraf docs/*",
     "dev": "rimraf docs/* && node_modules/webpack-dev-server/bin/webpack-dev-server.js --config src/config/webpack.config.dev.js",
     "prod": "rimraf docs/* && webpack --config src/config/webpack.config.prod.js",
-    "start": "rimraf docs/* && webpack --config src/config/webpack.config.prod.js && nodemon app"
+    "preview": "rimraf docs/* && webpack --config src/config/webpack.config.prod.js && nodemon server/server"
   },
   "dependencies": {
     "pug": "^2.0.3"
