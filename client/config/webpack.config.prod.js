@@ -3,6 +3,8 @@ const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const GoogleFontsPlugin = require("google-fonts-plugin");
+
 module.exports = {
   mode: "production",
   entry: path.resolve(__dirname, "../../client/js/app/app.js"),
@@ -18,7 +20,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: path.resolve(__dirname, "../../client/views/index.pug")
-    })
+    }),
+    new GoogleFontsPlugin(
+      path.resolve(__dirname, "../../client/js/fonts/fonts.json")
+    )
   ],
   module: {
     rules: [

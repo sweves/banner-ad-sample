@@ -1,5 +1,6 @@
 .content__slider {
     background-color: $color-black;
+    color: $color-white;
     width: 40%;
     height: 100%;
 }
@@ -12,8 +13,3 @@
     height: 40%;
 }
 
-.slider__cta {
-    color: $color-white;
-    font-style: italic;
-    text-transform: uppercase;
-}

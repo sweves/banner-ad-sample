@@ -1,0 +1,12 @@
+{
+  "google-fonts-plugin": {
+    "fonts": [
+      {
+        "family": "Lato",
+        "variants": ["300i"]
+      }
+    ],
+    "formats": ["ttf"],
+    "outputDir": "static/fonts"
+  }
+}
