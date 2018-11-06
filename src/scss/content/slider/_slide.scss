@@ -1,12 +1,25 @@
 .slider__slide {
-    // height: 100%;
-    // width: 100%;
-}
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 1em;
 
-.slide__logo {
-    width: 3.75em;
+    @include desktop {
+        padding: 1.5em;
+    }
 
-    path {
-        fill: $color-yellow;
+    &.hidden {
+        display: none;
+    }
+
+    h2 {
+        font-size: 2em;
+        text-transform: uppercase;
+
+        @include desktop {
+            font-size: 4.5em;
+        }
     }
 }

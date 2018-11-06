@@ -2,7 +2,7 @@ doctype html
 
 html(lang="en")
     head
-        title sarah
+        title banner ad sample
         meta(
             name="viewport"
             content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
@@ -21,25 +21,21 @@ html(lang="en")
                         src='https://dl.dropbox.com/s/nvtznxk17mf5mob/coffee.mp4?dl=0'
                         type='video/mp4'
                     )
-            section.content__video-controls
-            section.content__slider
+            a.content__video-trigger(
+                href="#"
+            )
+                span
+            a.content__slider(
+                href="http://www.sylvanesso.com/"
+                target="_blank"
+            )
                 section.slider__slides
                     article.slider__slide
-                        h2 Get up, get down
-                    article.slider__slide
-                        h2 Get up, get down
-                    article.slider__slide
+                        h2 get up
+                    article.slider__slide.hidden
+                        h2 get down
+                    article.slider__slide.hidden
                         h2 Feel the turn of rotation and stop
-                    article.slider__slide
-                        h2 See the next one waiting
-                    article.slider__slide
-                        h2 Get up, get down
-                    article.slider__slide
-                        h2 Get up, get down
-                    article.slider__slide
-                        h2 Get up
-                    article.slider__slide
-                        h2 Sentiment's the same but the pair of feet change
                 section.slider__footer
                     p Sylvan Esso on Tour Now
                     p get Tickets

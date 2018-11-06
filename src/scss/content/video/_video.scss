@@ -2,10 +2,12 @@
     height: 50%;
     overflow: hidden;
     width: 100%;
+    z-index: -1;
 
-    @include bp-m {
+    @include desktop {
+        position: absolute;
         height: 100%;
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -13,4 +15,35 @@ video {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+.content__video-trigger {
+    float: left;
+    height: 50%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+    @include desktop {
+        position: relative;
+        height: 100%;
+        width: 60%;
+    }
+
+    span {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-left: 50px solid $color-transparent-white;
+        }
+    }
 }

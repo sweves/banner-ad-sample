@@ -1,15 +1,60 @@
 .content__slider {
     background-color: $color-black;
     color: $color-white;
-    width: 40%;
-    height: 100%;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+
+    @include desktop {
+        background-color: $color-transparent-black;
+        height: 100%;
+        width: 40%;
+    }
+}
+
+.content__slider,
+.slider__footer {
+    text-align: center;
 }
 
 .slider__slides {
-    height: 60%;
+    height: 40%;
+
+    @include desktop {
+        height: 60%;
+    }
 }
 
 .slider__footer {
-    height: 40%;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-around;
+    padding: 0 1em 1em;
+
+    @include desktop {
+        height: 40%;
+    }
+
+    p {
+        @include desktop {
+            font-size: 1.5em;
+        }
+    }
 }
 
+.slider__logo {
+    width: 2em;
+
+    @include desktop {
+        width: 3.75em;
+    }
+
+    path {
+        fill: $color-yellow;
+    }
+}

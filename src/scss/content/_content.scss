@@ -1,11 +1,14 @@
 .content {
-    background-color: $color-black;
-    display: flex;
     height: 27.125em;
     overflow: hidden;
+    position: relative;
     width: 100%;
 
-    @include bp-m {
+    @include mobile {
+        flex-direction: column;
+    }
+
+    @include desktop {
         height: 32.5em;
     }
 }
