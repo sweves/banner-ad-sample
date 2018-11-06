@@ -9,8 +9,24 @@ html(lang="en")
         )
     body
         main.content
+            section.content__modal.hidden
+                video(
+                    id="video__modal"
+                    preload="none"
+                )
+                    source(
+                        src='https://dl.dropbox.com/s/nvtznxk17mf5mob/coffee.mp4?dl=0'
+                        type='video/mp4'
+                    )
+                progress(
+                    id="video__modal-progress"
+                    max="100"
+                    value="0"
+                )
+                a.modal__close X
             section.content__video
                 video(
+                    id="video__loop"
                     playsinline
                     autoplay
                     muted
