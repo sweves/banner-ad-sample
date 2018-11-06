@@ -6,16 +6,16 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "none",
+  mode: "production",
   entry: path.resolve(__dirname, "../../client/js/app/app.js"),
   output: {
-    filename: "main.js",
+    filename: "index.bundle.js",
     path: path.resolve(__dirname, "../../static"),
     publicPath: ""
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: "main.css"
+      filename: "index.bundle.css"
     }),
     new HtmlWebpackPlugin({
       filename: "index.html",
@@ -61,17 +61,6 @@ module.exports = {
             }
           ]
         })
-      },
-      {
-        test: /\.(mp4|webm)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "videos/[name].[ext]"
-            }
-          }
-        ]
       }
     ]
   }

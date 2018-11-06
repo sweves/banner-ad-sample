@@ -14,7 +14,8 @@
   "license": "MIT",
   "author": "Sarah Wever <sarahewever@gmail.com> (http://sweves.github.io/)",
   "scripts": {
-    "dev": "rimraf static/* && webpack --config client/config/webpack.config.dev.js",
+    "clean": "rimraf static/*",
+    "dev": "rimraf static/* && node_modules/webpack-dev-server/bin/webpack-dev-server.js --config client/config/webpack.config.dev.js",
     "prod": "rimraf static/* && webpack --config client/config/webpack.config.prod.js",
     "start": "rimraf static/* && webpack --config client/config/webpack.config.prod.js && nodemon app"
   },
@@ -40,6 +41,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.10"
   }
 }

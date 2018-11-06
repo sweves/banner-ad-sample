@@ -6,8 +6,13 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "none",
+  mode: "development",
   entry: path.resolve(__dirname, "../../client/js/app/app.js"),
+  devServer: {
+    contentBase: "./static",
+    compress: true,
+    port: 9000
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "../../static"),
